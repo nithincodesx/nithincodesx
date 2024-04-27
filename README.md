@@ -1,7 +1,7 @@
 <img align="top" alt="coding" width="1200" height="200" src="https://giffiles.alphacoders.com/218/218663.gif">
 <h1 align="center">Hi , I'm Nithin</h1>
 <h3 align="center">"Tech Enthusiast & Co-founder at Nayne Tech | Driving Innovation in Cybersecurity & Data Science | Computer Science Student"</h3>
-<img align="right" alt="coding" width="400" src="https://64.media.tumblr.com/652fd11d23cdbc3e08c6266aafb69580/889e69fc304a11d5-e0/s540x810/0a4047acf4b9bf6a8e75e260de245a0f5cacd6b2.gif">
+<img align="right" alt="coding" width="400" src="https://i.pinimg.com/originals/4a/59/04/4a5904db82b19b2965026a04b073503f.gif">
 
 - 🌱 I’m currently learning **Artificial Intelligence**
 
