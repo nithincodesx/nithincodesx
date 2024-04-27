@@ -2,13 +2,13 @@
 <h3 align="center">"Tech Enthusiast & Co-founder at Nayne Tech | Driving Innovation in Cybersecurity & Data Science | Computer Science Student"</h3>
 <img align="right" alt="coding" width="400" src="https://media.tenor.com/6oOwU5DNKnMAAAAM/zragon-infinity-zoro.gif">
 
-- 🌱 I’m currently learning **Artificial Intelligence**
+-  I’m currently learning **Artificial Intelligence**
 
-- 👯 I’m looking to collaborate on **Cloud native projects**
+-  I’m looking to collaborate on **Cloud native projects**
 
-- 🤝 I’m looking for help with **DevOps**
+-  I’m looking for help with **DevOps**
 
-- 📫 How to reach me **nithincodes@gmail.com**
+-  How to reach me **nithincodes@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
