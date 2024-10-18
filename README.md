@@ -4,12 +4,7 @@
 <img align="right" alt="coding" width="400" src="https://i.pinimg.com/originals/4a/59/04/4a5904db82b19b2965026a04b073503f.gif">
 
 - I’m currently learning **Artificial Intelligence**
-
-- I’m looking to collaborate on **Cloud native projects**
-
-- I’m looking for help with **DevOps**
-
-- How to reach me **nithincodes@gmail.com**
+   reach me **nithincodes@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
@@ -23,4 +18,3 @@
 <h3 align="left">Support:</h3>
 <p><a href="https://www.buymeacoffee.com/nithincodes"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="nithincodes" /></a></p><br><br>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=nithincodesx&show_icons=true&locale=en" alt="nithincodesx" /></p>
