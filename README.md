@@ -1,4 +1,4 @@
-<img align="top" alt="coding" width="1200" height="200" src="https://giffiles.alphacoders.com/218/218663.gif">
+
 <h1 align="center">Hi , I'm Nithin</h1>
 <h3 align="center">"Tech Enthusiast & Co-founder at Nayne Tech | Driving Innovation in Cybersecurity & Data Science | Computer Science Student"</h3>
 <img align="right" alt="coding" width="400" src="https://i.pinimg.com/originals/4a/59/04/4a5904db82b19b2965026a04b073503f.gif">
