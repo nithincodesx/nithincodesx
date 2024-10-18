@@ -4,7 +4,7 @@
 <img align="right" alt="coding" width="400" src="https://i.pinimg.com/originals/4a/59/04/4a5904db82b19b2965026a04b073503f.gif">
 
 - I’m currently learning **Artificial Intelligence**
-  \\Reach me **nithincodes@gmail.com**
+- Reach me **nithincodes@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
