@@ -1,7 +1,7 @@
 
 <h1 align="center">Hi , I'm Nithin</h1>
 <h3 align="center">"Tech Enthusiast & Aspiring AI Engineer | Building Voice AI & Autonomous Agents || Computer Science Student"</h3>
-<img align="right" alt="coding" width="400" src="https://i.pinimg.com/originals/4a/59/04/4a5904db82b19b2965026a04b073503f.gif">
+<img align="right" alt="coding" width="400" src="https://pin.it/4dmpI96fS">
 
 - I’m currently learning **Artificial Intelligence**
 - Reach me **codesnithin@gmail.com**
