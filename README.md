@@ -1,7 +1,7 @@
 
 <h1 align="center">Hi , I'm Nithin</h1>
 <h3 align="center">"Tech Enthusiast & Aspiring AI Engineer | Building Voice AI & Autonomous Agents || Computer Science Student"</h3>
-<img align="right" alt="coding" width="400" src="https://tenor.com/view/aizen-aizen-sosuke-planned-aizen-sosuke-plan-aizen-plan-gif-6086741074040527558">
+<img align="right" alt="coding" width="400" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExamk4MG81bTR1cXhqM2xqYXRpZmt1MHdzY25sdjljbmptcmdnZ251dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EGCHBR7ozpShw5AnCW/giphy.gif">
 
 - I’m currently learning **Artificial Intelligence**
 - Reach me **codesnithin@gmail.com**
