@@ -1,5 +1,5 @@
 
-<h1 align="center">Hi , I'm Nithin</h1>
+<h1 align="center">Hi , I'm Nithinkrishhna</h1>
 <h3 align="center">"Tech Enthusiast & Aspiring AI Engineer | Building Voice AI & Autonomous Agents || Computer Science Student"</h3>
 <img align="right" alt="coding" width="500" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHRwYm9vdXJibmJlcmE1aHJnZ2xldHFhN2FjYTl6OWNvemR6bGNnbCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1VVxPF9TL9AqwChDjq/giphy.gif">
 
