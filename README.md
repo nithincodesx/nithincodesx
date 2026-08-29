@@ -7,6 +7,10 @@
 </p>
 
 <p align="center">
+  <img src="https://raw.githubusercontent.com/nithincodesx/nithincodesx/main/assets/anime_gaze.gif" width="550" alt="Anime Gaze GIF" />
+</p>
+
+<p align="center">
   <img src="https://raw.githubusercontent.com/nithincodesx/nithincodesx/main/assets/red_flow.svg" width="100%" alt="Red Blood Flow Divider" />
 </p>
 
