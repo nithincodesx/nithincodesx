@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Cinzel&weight=700&size=30&duration=3000&pause=1000&color=8B0000&center=true&vCenter=true&width=650&lines=%E2%9A%94%EF%B8%8F+HI%2C+I'M+NITHINKRISHHNA+%E2%9A%94%EF%B8%8F;%F0%9F%95%B7%EF%B8%8F+WELCOME+TO+THE+VOID+%F0%9F%95%B7%EF%B8%8F;%F0%9F%AA%A6+CONJURING+AI+INTO+REALITY+%F0%9F%AA%A6" alt="Gothic Header" />
+  <img src="https://readme-typing-svg.demolab.com?font=Cinzel&weight=700&size=30&duration=3000&pause=1000&color=8B0000&center=true&vCenter=true&width=650&lines=HI%2C+I'M+NITHINKRISHHNA;WELCOME+TO+THE+VOID;CONJURING+AI+INTO+REALITY" alt="Gothic Header" />
 </h1>
 
 <p align="center">
@@ -14,7 +14,7 @@
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="Goth Divider" />
 </p>
 
-<h2 align="center">🕸️ ARSENAL & SPELLS 🕸️</h2>
+<h2 align="center">ARSENAL & SPELLS</h2>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=DC143C" alt="Python" />
@@ -31,7 +31,7 @@
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="Goth Divider" />
 </p>
 
-<h2 align="center">⚔️ CONNECT WITH ME ⚔️</h2>
+<h2 align="center">CONNECT WITH ME</h2>
 
 <p align="center">
   <a href="https://linkedin.com/in/nithincodes" target="_blank">
@@ -49,7 +49,7 @@
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="Goth Divider" />
 </p>
 
-<h2 align="center">🩸 SUPPORT THE SHADOWS 🩸</h2>
+<h2 align="center">SUPPORT THE SHADOWS</h2>
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/nithincodes" target="_blank">
@@ -61,7 +61,7 @@
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%" alt="Goth Divider" />
 </p>
 
-<h2 align="center">🐍 MY CONTRIBUTIONS IN THE SHADOWS 🐍</h2>
+<h2 align="center">🐍 My Contributions</h2>
 
 <p align="center">
   <picture>
