@@ -6,7 +6,9 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2500&pause=1000&color=DC143C&center=true&vCenter=true&width=750&lines=Tech+Enthusiast+%26+Aspiring+AI+Engineer;Building+Voice+AI+%26+Autonomous+Agents;Computer+Science+Student;Exploring+the+Dark+Arts+of+Artificial+Intelligence" alt="Gothic Subheader" />
 </p>
 
----
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nithincodesx/nithincodesx/main/assets/red_flow.svg" width="100%" alt="Red Blood Flow Divider" />
+</p>
 
 <h2 align="center">ARSENAL & SPELLS</h2>
 
@@ -21,7 +23,9 @@
   <img src="https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=DC143C" alt="Linux" />
 </p>
 
----
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nithincodesx/nithincodesx/main/assets/red_flow.svg" width="100%" alt="Red Blood Flow Divider" />
+</p>
 
 <h2 align="center">CONNECT WITH ME</h2>
 
@@ -37,7 +41,9 @@
   </a>
 </p>
 
----
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nithincodesx/nithincodesx/main/assets/red_flow.svg" width="100%" alt="Red Blood Flow Divider" />
+</p>
 
 <h2 align="center">SUPPORT THE SHADOWS</h2>
 
@@ -47,7 +53,9 @@
   </a>
 </p>
 
----
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nithincodesx/nithincodesx/main/assets/red_flow.svg" width="100%" alt="Red Blood Flow Divider" />
+</p>
 
 <h2 align="center">🐍 My Contributions</h2>
 

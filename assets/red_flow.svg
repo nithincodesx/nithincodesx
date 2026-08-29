@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="6" viewBox="0 0 1000 6" fill="none">
+  <defs>
+    <linearGradient id="redFlowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a0003"/>
+      <stop offset="35%" stop-color="#8b0000"/>
+      <stop offset="50%" stop-color="#ff0033"/>
+      <stop offset="65%" stop-color="#8b0000"/>
+      <stop offset="100%" stop-color="#1a0003"/>
+      <animateTransform 
+        attributeName="gradientTransform" 
+        type="translate" 
+        from="-1000,0" 
+        to="1000,0" 
+        dur="2s" 
+        repeatCount="indefinite" />
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="6" rx="3" fill="url(#redFlowGrad)"/>
+</svg>
