@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nithincodesx/nithincodesx/main/assets/anime_gaze.gif" width="550" alt="Anime Gaze GIF" />
+  <img src="https://raw.githubusercontent.com/nithincodesx/nithincodesx/main/assets/anime_gaze.gif" width="100%" alt="Anime Red Banner GIF" />
 </p>
 
 <p align="center">
