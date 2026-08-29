@@ -6,13 +6,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2500&pause=1000&color=DC143C&center=true&vCenter=true&width=750&lines=Tech+Enthusiast+%26+Aspiring+AI+Engineer;Building+Voice+AI+%26+Autonomous+Agents;Computer+Science+Student;Exploring+the+Dark+Arts+of+Artificial+Intelligence" alt="Gothic Subheader" />
 </p>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="650" alt="Goth Aesthetic Coding GIF" />
-</p>
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100%" alt="Red Goth Divider" />
-</p>
+---
 
 <h2 align="center">ARSENAL & SPELLS</h2>
 
@@ -27,9 +21,7 @@
   <img src="https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=DC143C" alt="Linux" />
 </p>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100%" alt="Red Goth Divider" />
-</p>
+---
 
 <h2 align="center">CONNECT WITH ME</h2>
 
@@ -45,9 +37,7 @@
   </a>
 </p>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100%" alt="Red Goth Divider" />
-</p>
+---
 
 <h2 align="center">SUPPORT THE SHADOWS</h2>
 
@@ -57,9 +47,7 @@
   </a>
 </p>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="100%" alt="Red Goth Divider" />
-</p>
+---
 
 <h2 align="center">🐍 My Contributions</h2>
 
