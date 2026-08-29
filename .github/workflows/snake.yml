@@ -24,7 +24,7 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Push Snake to output branch
+      - name: Publish Snake
         uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output
