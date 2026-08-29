@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/anime_gaze.gif" width="100%" alt="Ichigo Kurosaki Bleach GIF" />
+  <img src="assets/anime_gaze.gif" width="100%" alt="Ego Egopeek GIF" />
 </p>
 
 <p align="center">
