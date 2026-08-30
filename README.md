@@ -3,11 +3,11 @@
 </h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=16&duration=2500&pause=1000&color=DC143C&center=true&vCenter=true&width=750&lines=Tech+Enthusiast+%26+Aspiring+AI+Engineer;Building+Voice+AI+%26+Autonomous+Agents;Computer+Science+Student;Exploring+the+Dark+Arts+of+Artificial+Intelligence" alt="Gothic Subheader" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=650&size=20&duration=2500&pause=1000&color=DC143C&center=true&vCenter=true&width=750&lines=Tech+Enthusiast+%26+Aspiring+AI+Engineer;Building+Voice+AI+%26+Autonomous+Agents;Computer+Science+Student;Exploring+the+Dark+Arts+of+Artificial+Intelligence" alt="Gothic Subheader" />
 </p>
 
 <p align="center">
-  <img src="assets/anime_gaze.gif" width="100%" alt="Ego Egopeek GIF" />
+  <img src="assets/anime_gaze.gif" width="70%" alt="Ego Egopeek GIF" />
 </p>
 
 <p align="center">
