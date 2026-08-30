@@ -61,7 +61,7 @@
   <img src="https://raw.githubusercontent.com/nithincodesx/nithincodesx/main/assets/red_flow.svg" width="100%" alt="Red Blood Flow Divider" />
 </p>
 
-<h2 align="center">🐍 My Contributions</h2>
+<h2 align="center">🫩 My Contributions</h2>
 
 <p align="center">
   <picture>
