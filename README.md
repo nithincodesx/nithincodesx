@@ -1,4 +1,14 @@
 
+![Developer profile](https://www.gitskins.com/api/section/hero?username=nithincodesx&theme=retro)
+
+
+![Contribution city](https://www.gitskins.com/api/section/city?username=nithincodesx&theme=retro)
+
+
+![Public projects](https://www.gitskins.com/api/section/projects?username=nithincodesx&theme=retro)
+
+<h3 align="center"><a href="https://github.com/nithincodesx?tab=repositories">Explore the repositories ↗</a></h3>
+
 <h2 align="center">🫩 My Contributions</h2>
 
 <p align="center">
