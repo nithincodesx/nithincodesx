@@ -1,5 +1,4 @@
 
-![Developer profile](https://www.gitskins.com/api/section/hero?username=nithincodesx&theme=retro)
 
 
 ![Contribution city](https://www.gitskins.com/api/section/city?username=nithincodesx&theme=retro)
