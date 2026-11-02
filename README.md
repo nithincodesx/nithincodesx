@@ -1,6 +1,6 @@
 <picture>
   <source media="(prefers-color-scheme: light)" srcset="https://www.gitskins.com/api/section/wordmark?username=nithincodesx&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F150531088%3Fu%3D4afeeb93b3ac494eee9dbf3d458c948e5bd09684%26v%3D4&label=Nithin&v=cinematic-hero-wordmark-1&mode=light" />
-  <img src="https://www.gitskins.com/api/section/wordmark?username=nithincodesx&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F150531088%3Fu%3D4afeeb93b3ac494eee9dbf3d458c948e5bd09684%26v%3D4&label=Nithin&v=cinematic-hero-wordmark-1&mode=dark" width="85%" alt="Nithin animated ASCII name" />
+  <img src="https://www.gitskins.com/api/section/wordmark?username=nithincodesx&theme=aurora&avatar=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F150531088%3Fu%3D4afeeb93b3ac494eee9dbf3d458c948e5bd09684%26v%3D4&label=Nithin&v=cinematic-hero-wordmark-1&mode=dark" width="100%" alt="Nithin animated ASCII name" />
 </picture>
 
 ![Public projects](https://www.gitskins.com/api/section/projects?username=nithincodesx&theme=retro)
