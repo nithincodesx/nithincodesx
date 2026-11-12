@@ -10,7 +10,6 @@
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=nithincodesx&label=Profile%20views&color=7c3aed&style=flat" alt="profile views" />
 <a href="https://github.com/nithincodesx?tab=followers"><img src="https://img.shields.io/github/followers/nithincodesx?label=Followers&style=flat&color=7c3aed" alt="followers" /></a>
 <a href="https://github.com/nithincodesx"><img src="https://img.shields.io/badge/Repositories-47%20public-7c3aed?style=flat" alt="repos" /></a>
 
