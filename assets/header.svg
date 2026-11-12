@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="180" viewBox="0 0 880 180">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed">
+        <animate attributeName="stop-color" values="#7c3aed;#2563eb;#7c3aed" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#2563eb">
+        <animate attributeName="stop-color" values="#2563eb;#db2777;#2563eb" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="180" fill="url(#bg)"/>
+  <g opacity="0.25" fill="#ffffff">
+    <path d="M0,120 C150,80 300,150 440,115 C580,80 730,140 880,105 L880,180 L0,180 Z">
+      <animateTransform attributeName="transform" type="translate" values="0,0; -14,0; 0,0" dur="6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g opacity="0.18" fill="#ffffff">
+    <path d="M0,140 C180,105 340,165 520,135 C660,112 780,150 880,130 L880,180 L0,180 Z">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 12,0; 0,0" dur="7s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <circle cx="90" cy="45" r="26" fill="#ffffff" opacity="0.10"/>
+  <circle cx="800" cy="40" r="36" fill="#ffffff" opacity="0.10"/>
+  <circle cx="745" cy="130" r="14" fill="#ffffff" opacity="0.12"/>
+  <text x="440" y="82" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="42" font-weight="700" fill="#ffffff">Nithinkrishna T D</text>
+  <text x="440" y="118" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#e0e7ff">Building Voice AI and Autonomous Agents</text>
+</svg>

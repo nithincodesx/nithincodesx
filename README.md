@@ -1,7 +1,7 @@
 <div align="center">
 
-<!-- Animated wave header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Nithinkrishna%20T%20D&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Building%20Voice%20AI%20%26%20Autonomous%20Agents&descAlignY=58&descSize=18" width="100%" alt="header"/>
+<!-- Animated wave header (self-hosted, always loads) -->
+<img src="./assets/header.svg" width="100%" alt="header"/>
 
 <!-- Animated typing lines -->
 <a href="https://github.com/nithincodesx">
@@ -49,11 +49,6 @@
 ---
 
 ## 📊 GitHub Stats
-
-<div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=nithincodesx&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="github stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nithincodesx&layout=compact&theme=tokyonight" alt="top languages" />
-</div>
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=nithincodesx&theme=tokyonight" alt="github streak" />
