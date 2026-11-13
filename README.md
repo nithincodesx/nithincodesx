@@ -39,4 +39,4 @@
 <a href="https://github.com/nithincodesx?tab=followers">followers</a> &nbsp;/&nbsp; <a href="https://github.com/nithincodesx?tab=repositories">all repos</a> &nbsp;/&nbsp; <a href="https://github.com/nithincodesx/Coraxis">coraxis</a> &nbsp;/&nbsp; <a href="https://github.com/nithincodesx/ammacare">ammacare</a>
 </p>
 
-<p align="center"><sub>Cards redrawn daily by GitHub Actions from my real contribution data. Animated-SVG-card design inspired by <a href="https://www.avivashishta.com/blog/github-profile-readme-animated-svg-cards">Avi Vashishta's README guide</a>. Thanks for stopping by — if an agent of mine sent you here, say hi.</sub></p>
+<p align="center"><sub>Cards generated from my real contribution data by scripts in this repo. Animated-SVG-card design inspired by <a href="https://www.avivashishta.com/blog/github-profile-readme-animated-svg-cards">Avi Vashishta's README guide</a>. Thanks for stopping by — if an agent of mine sent you here, say hi.</sub></p>
