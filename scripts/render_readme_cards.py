@@ -347,70 +347,95 @@ def tech():
 
 
 # ---- 8 · skills & stack (two-column, after the screenshot the user sent) ---------
-def _chip(x, y, text, delay, filled=False):
-    wch = 22 + len(text) * 7.6
-    if filled:
-        return (f'<g class="p" style="animation-delay:{delay:.2f}s">'
-                f'<rect x="{x}" y="{y}" width="{wch:.0f}" height="24" rx="4" fill="{INK}"/>'
-                f'<text x="{x + wch/2:.0f}" y="{y+16}" text-anchor="middle" font-family="{MONO}" font-size="11" letter-spacing="1" fill="{PAPER}">{text}</text></g>', x + wch + 8)
+# Left column is icon-only tiles: brand glyphs from Simple Icons, stored as
+# assets/icons/<slug>.svg (CC0) and embedded as paths -- an SVG shown through
+# <img> cannot load external images, so the glyphs must live inside the card.
+import re as _re
+def _icon_path(slug):
+    with open(os.path.join(ROOT, "assets", "icons", slug + ".svg")) as fh:
+        m = _re.search(r'<path d="([^"]+)"', fh.read())
+    return m.group(1) if m else ""
+
+def _icon_tile(x, y, slug, name, delay):
+    dpath = _icon_path(slug)
+    return (f'<g class="p" style="animation-delay:{delay:.2f}s"><title>{escape(name)}</title>'
+            f'<rect x="{x}" y="{y}" width="46" height="46" rx="10" fill="{PAPER}" stroke="{RULE}"/>'
+            f'<svg x="{x+9}" y="{y+9}" width="28" height="28" viewBox="0 0 24 24"><path d="{dpath}" fill="{INK}"/></svg></g>')
+
+def _text_tile(x, y, delay):
+    return (f'<g class="p" style="animation-delay:{delay:.2f}s"><title>VS Code</title>'
+            f'<rect x="{x}" y="{y}" width="46" height="46" rx="10" fill="{PAPER}" stroke="{RULE}"/>'
+            f'<text x="{x+23}" y="{y+24}" text-anchor="middle" font-family="{SERIF}" font-weight="bold" font-size="15" fill="{INK}">VS</text>'
+            f'<text x="{x+23}" y="{y+37}" text-anchor="middle" font-family="{MONO}" font-size="7.5" letter-spacing="1" fill="{MUTED}">CODE</text></g>')
+
+def _badge(x, y, text, delay, small=False):
+    fs = 10 if small else 11
+    cw = 6.6 if small else 7.6
+    hh = 22 if small else 24
+    wch = 16 + len(text) * cw
     return (f'<g class="p" style="animation-delay:{delay:.2f}s">'
-            f'<rect x="{x}" y="{y}" width="{wch:.0f}" height="26" rx="13" fill="{PAPER}" stroke="{RULE}"/>'
-            f'<text x="{x + wch/2:.0f}" y="{y+17}" text-anchor="middle" font-family="{MONO}" font-size="12" fill="{SOFT}">{text}</text></g>', x + wch + 8)
+            f'<rect x="{x}" y="{y}" width="{wch:.0f}" height="{hh}" rx="4" fill="{INK}"/>'
+            f'<text x="{x + wch/2:.0f}" y="{y + hh/2 + fs*0.36:.0f}" text-anchor="middle" font-family="{MONO}" font-size="{fs}" letter-spacing="1" fill="{PAPER}">{text}</text></g>', x + wch + 8)
 
 def skills():
-    h = 566
     left = [
-        ("Languages", ["Python", "TypeScript", "JavaScript", "HTML", "CSS"]),
-        ("Frontend", ["React", "Next.js"]),
-        ("Backend", ["FastAPI", "Node.js", "REST APIs"]),
-        ("Databases", ["PostgreSQL", "Supabase", "Firebase"]),
-        ("Cloud & DevOps", ["Git", "GitHub", "VS Code", "GitHub Actions"]),
+        ("Languages", [("python", "Python"), ("typescript", "TypeScript"), ("javascript", "JavaScript"), ("html5", "HTML5"), ("css", "CSS")]),
+        ("Frontend", [("react", "React"), ("nextdotjs", "Next.js"), ("tailwindcss", "Tailwind CSS")]),
+        ("Backend", [("fastapi", "FastAPI"), ("nodedotjs", "Node.js")]),
+        ("Databases", [("postgresql", "PostgreSQL"), ("supabase", "Supabase"), ("firebase", "Firebase")]),
+        ("AI Frameworks", [("crewai", "CrewAI"), ("langgraph", "LangGraph"), ("huggingface", "Hugging Face")]),
+        ("Cloud & DevOps", [("git", "Git"), ("github", "GitHub"), ("githubactions", "GitHub Actions"), ("vscode", "VS Code")]),
     ]
     right = [
-        ("Artificial Intelligence", ["AI AGENTS", "VOICE AI"],
+        ("Artificial Intelligence", [["AI AGENTS", "VOICE AI"], ["CREWAI", "LANGGRAPH", "LANGSMITH", "HUGGING FACE"]],
          ["Multi-Agent Systems · RAG Pipelines · Prompt",
           "Engineering · Agent Verification · Research",
           "Agents · Cited Reports · AI Chatbots"]),
-        ("Automation & Scraping", ["PLAYWRIGHT", "BROWSER AGENTS"],
+        ("Automation & Scraping", [["PLAYWRIGHT", "BROWSER AGENTS"]],
          ["Web Scraping · HLS / MP4 Stream Sniffing",
           "Series Crawlers · Flow Automation · yt-dlp"]),
-        ("Data & Search", ["HYBRID RAG"],
+        ("Data & Search", [["HYBRID RAG"]],
          ["BM25 + Vector Search · Source Cross-Checking",
           "Hallucination Checks · Document Q&A"]),
-        ("Workflow & Delivery", ["GITHUB ACTIONS"],
+        ("Workflow & Delivery", [["GITHUB ACTIONS", "CLI HARNESS"]],
          ["API Integration · JSON Pipelines · Approval",
           "Dashboards · Daily Auto-Refresh · Free Stack"]),
     ]
+    # layout: left sections are heading + one 46px icon row (advance 82);
+    # right sections are heading + badge rows + text lines. Height fits both.
+    left_end = 92 + (len(left) - 1) * 82 + 56
+    h = left_end + 30
     out = [frame(W, h)]
     out.append(f'<text class="f" {d(2.5)} x="48" y="40" font-family="{MONO}" font-size="11.5" letter-spacing="2" fill="{MUTED}">SKILLS &amp; STACK</text>')
     out.append(f'<line x1="48" y1="54" x2="832" y2="54" stroke="{RULE}"/>')
     out.append(f'<line x1="452" y1="70" x2="452" y2="{h-24}" stroke="{RULE}"/>')
-    # left column: heading + pill rows (wraps like the screenshot's icon rows)
     y = 92
     for si, (title, items) in enumerate(left):
-        out.append(f'<g class="sl" style="animation-delay:{2.55 + si*0.12:.2f}s"><rect x="48" y="{y-11}" width="9" height="9" fill="{INK}"/><text x="66" y="{y}" font-family="{SERIF}" font-weight="bold" font-size="16.5" fill="{INK}">{escape(title)}</text></g>')
-        x, cy = 48, y + 10
-        for ii, it in enumerate(items):
-            wch = 22 + len(it) * 7.6
-            if x + wch > 428:
-                x = 48; cy += 34
-            chip, x = _chip(x, cy, it, 2.65 + si*0.12 + ii*0.05)
-            out.append(chip)
-        y = cy + 62
-    # right column: heading + filled badges + wrapped bullet lines
+        out.append(f'<g class="sl" style="animation-delay:{2.55 + si*0.1:.2f}s"><rect x="48" y="{y-11}" width="9" height="9" fill="{INK}"/><text x="66" y="{y}" font-family="{SERIF}" font-weight="bold" font-size="16.5" fill="{INK}">{escape(title)}</text></g>')
+        x = 48
+        for ii, (slug, name) in enumerate(items):
+            if slug == "vscode":
+                out.append(_text_tile(x, y + 10, 2.65 + si*0.1 + ii*0.05))
+            else:
+                out.append(_icon_tile(x, y + 10, slug, name, 2.65 + si*0.1 + ii*0.05))
+            x += 56
+        y += 82
     y = 92
-    for si, (title, badges, lines) in enumerate(right):
+    for si, (title, badge_rows, lines) in enumerate(right):
         out.append(f'<g class="sl" style="animation-delay:{2.6 + si*0.14:.2f}s"><rect x="478" y="{y-11}" width="9" height="9" fill="{INK}"/><text x="496" y="{y}" font-family="{SERIF}" font-weight="bold" font-size="16.5" fill="{INK}">{escape(title)}</text></g>')
-        x = 478
-        for bi, b in enumerate(badges):
-            chip, x = _chip(x, y + 10, b, 2.7 + si*0.14 + bi*0.06, filled=True)
-            out.append(chip)
-        ty = y + 58
+        by = y + 10
+        for ri, row in enumerate(badge_rows):
+            x = 478
+            for bi, b in enumerate(row):
+                chip, x = _badge(x, by, b, 2.7 + si*0.14 + ri*0.08 + bi*0.05, small=(ri > 0))
+                out.append(chip)
+            by += 24 + 6 if ri == 0 else 22 + 6
+        ty = by + 20
         for li, ln in enumerate(lines):
-            out.append(f'<text class="f" style="animation-delay:{2.8 + si*0.14 + li*0.07:.2f}s" x="478" y="{ty}" font-family="{SANS}" font-size="13.5" fill="{SOFT}">{escape(ln)}</text>')
+            out.append(f'<text class="f" style="animation-delay:{2.85 + si*0.14 + li*0.07:.2f}s" x="478" y="{ty}" font-family="{SANS}" font-size="13.5" fill="{SOFT}">{escape(ln)}</text>')
             ty += 20
         y = ty + 18
-    write("skills.svg", svg(W, h, "".join(out), "Skills and stack: Python, TypeScript, React, Next.js, FastAPI, PostgreSQL, Supabase, Firebase, AI agents, voice AI, RAG, automation"))
+    write("skills.svg", svg(W, h, "".join(out), "Skills and stack, as icons: Python, TypeScript, JavaScript, HTML5, CSS, React, Next.js, Tailwind CSS, FastAPI, Node.js, PostgreSQL, Supabase, Firebase, CrewAI, LangGraph, Hugging Face, Git, GitHub, GitHub Actions, VS Code. Plus AI agents, voice AI, automation and RAG."))
 
 if __name__ == "__main__":
     hero(); heatmap(); activity(); tiles(); title_building(); repos(); tech(); skills()
