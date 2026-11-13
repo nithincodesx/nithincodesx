@@ -11,6 +11,26 @@
 <a href="https://github.com/nithincodesx?tab=repositories"><img src="./cards/build.svg" width="33.333%" alt="BUILD: public repos shipped" /></a><a href="https://github.com/nithincodesx/Coraxis"><img src="./cards/agents.svg" width="33.333%" alt="AGENTS: 4 agents in Coraxis" /></a><a href="https://github.com/nithincodesx/ammacare"><img src="./cards/voice.svg" width="33.333%" alt="VOICE AI: Malayalam-first AmmaCare, 2 languages" /></a><br>
 <img src="./cards/title-building.svg" width="100%" alt="What I'm building" /><br>
 <a href="https://github.com/nithincodesx/Coraxis"><img src="./cards/repo-coraxis.svg" width="33.333%" alt="Coraxis" /></a><a href="https://github.com/nithincodesx/ammacare"><img src="./cards/repo-ammacare.svg" width="33.333%" alt="AmmaCare" /></a><a href="https://github.com/nithincodesx/Verified-Hybrid-Multi-Agent-RAG-System-v1"><img src="./cards/repo-rag.svg" width="33.333%" alt="Verified Hybrid Multi-Agent RAG System" /></a><br>
-<img src="./cards/tech.svg" width="100%" alt="Tech I build with: Python, TypeScript, React, Next.js, FastAPI, Node.js, Supabase, PostgreSQL, Firebase, Git" />
+<img src="./cards/skills.svg" width="100%" alt="Skills and stack: Languages, Frontend, Backend, Databases, Cloud and DevOps, Artificial Intelligence, Automation, Data and Search, Workflow" />
 </div>
 
+## About Me
+
+- I build **autonomous AI agents** and **voice AI** — agents that research, reason and *act*, not just chat
+- Computer Science student from **Kerala, India**, shipping solo on an entirely free stack
+- Deep into multi-agent systems, RAG pipelines and agent verification right now
+- Motto: *ship it, then make it smarter*
+
+## More Projects
+
+| Project | What it does |
+|---|---|
+| [**Cozy Coffee**](https://github.com/nithincodesx/Cozy-Coffee-v1) | Full-stack community app for coffee enthusiasts — share brews, review cafés, join forum discussions. |
+| [**CloudPulse AI**](https://github.com/nithincodesx/CloudPulse-AI) | SaaS-style dashboard tracking real-time server utilization, budget anomalies and idle infrastructure, with telemetry in Supabase. |
+| [**MediLink AI**](https://github.com/nithincodesx/MediLink-AI) | AI-powered healthcare linking, built with Python. |
+
+<p align="center">
+<a href="https://github.com/nithincodesx?tab=followers">followers</a> &nbsp;/&nbsp; <a href="https://github.com/nithincodesx?tab=repositories">all repos</a> &nbsp;/&nbsp; <a href="https://github.com/nithincodesx/Coraxis">coraxis</a> &nbsp;/&nbsp; <a href="https://github.com/nithincodesx/ammacare">ammacare</a>
+</p>
+
+<p align="center"><sub>Cards generated from my real contribution data by scripts in this repo. Animated-SVG-card design inspired by <a href="https://www.avivashishta.com/blog/github-profile-readme-animated-svg-cards">Avi Vashishta's README guide</a>. Thanks for stopping by — if an agent of mine sent you here, say hi.</sub></p>
