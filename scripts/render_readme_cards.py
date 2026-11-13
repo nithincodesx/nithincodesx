@@ -17,7 +17,7 @@ Live numbers come from data/contributions.json (fetch_contributions.py).
 Run by .github/workflows/update-profile-art.yml after the fetch step.
 STATIC=1 renders every animation at its end state, for screenshots.
 """
-import datetime, json, os
+import base64, datetime, json, os
 from html import escape
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -126,19 +126,23 @@ def frame(w, h):
     return (f'<rect width="{w}" height="{h}" rx="14" fill="{PAPER}"/>'
             f'<rect x="1" y="1" width="{w-2}" height="{h-2}" rx="13" fill="none" stroke="{RULE}"/>')
 
-# ---- 1 · hero: name + dot portrait, no terminal -------------------------------
+# ---- 1 · hero: name + the exact silhouette image the user supplied -------------
 def hero():
     h = 336
-    # dot portrait, right side: 42 cols over 252px -> cell 6, 52 rows -> 312 tall
-    cell = 6.0
-    px0, py0 = 880 - 48 - P["cols"] * cell, 12
-    dots = []
-    for c, r, f in P["dots"]:
-        cx = px0 + c * cell + cell / 2
-        cy = py0 + r * cell + cell / 2
-        rad = max(0.5, f * cell * 0.46)
-        delay = 0.30 + r * 0.018
-        dots.append(f'<circle class="f" style="animation-delay:{delay:.2f}s;animation-duration:.35s" cx="{cx:.1f}" cy="{cy:.1f}" r="{rad:.2f}" fill="{INK}"/>')
+    jpg = os.path.join(ROOT, "assets", "batman.jpg")
+    if os.path.exists(jpg):
+        with open(jpg, "rb") as fh:
+            b64 = base64.b64encode(fh.read()).decode()
+    else:
+        # the repo stores the image as base64 text (assets/batman-base64.txt):
+        # the GitHub snapshot push only carries UTF-8 files, no binaries
+        with open(os.path.join(ROOT, "assets", "batman-base64.txt")) as fh:
+            b64 = "".join(fh.read().split())
+    # exact image, embedded as a data URI (SVG <img> sandboxes block external
+    # requests, data URIs are fine). White background in the photo blends into
+    # the paper card via mix-blend-mode: multiply.
+    img_w = 235  # 735x1050 source at hero height
+    img_x = W - 36 - img_w
     body = f"""
 <defs>
   <linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="560" y2="0">
@@ -164,9 +168,11 @@ def hero():
   <text x="48" y="312" font-family="{MONO}" font-size="12" letter-spacing="1" fill="{INK}">CS STUDENT · KERALA, INDIA</text>
   <text x="560" y="312" text-anchor="end" font-family="{MONO}" font-size="12" fill="{MUTED}">github.com/nithincodesx</text>
 </g>
-<g>{''.join(dots)}</g>
+<g class="f" {d(0.35)}>
+  <image href="data:image/jpeg;base64,{b64}" x="{img_x}" y="0" width="{img_w}" height="{h}" preserveAspectRatio="xMidYMid meet" style="mix-blend-mode:multiply"/>
+</g>
 """
-    write("hero.svg", svg(W, h, body, "Nithinkrishna T D. Building voice AI and autonomous agents. Computer Science student from Kerala, India. Portrait in dots."))
+    write("hero.svg", svg(W, h, body, "Nithinkrishna T D. Building voice AI and autonomous agents. Computer Science student from Kerala, India. Batman silhouette."))
 
 # ---- 2 · contribution heatmap (ink) --------------------------------------------
 LEVEL_FILL = ["#e9e9e6", "#c9c9c4", "#8f8f89", "#4a4a46", "#111111"]
@@ -205,46 +211,48 @@ def heatmap():
 """
     write("heatmap.svg", svg(W, h, body, f"Contribution graph for the last 12 months: {TOTAL} contributions."))
 
-# ---- 3 · activity -----------------------------------------------------------------
+# ---- 3 · activity: Avi's layout -- big serif total, bars, right-hand stats -------
+BLUE = "#2f55ff"  # the one accent, on the best month only -- same as Avi's card
 def activity():
-    h = 252
+    h = 316
+    total_days = len(DAYS)
     maxv = max(m["total"] for m in MONTHLY) or 1
     best_month = max(MONTHLY, key=lambda m: m["total"])
-    chart_x, chart_y, chart_w, chart_h = 48, 62, 520, 138
+    chart_x, base_y, chart_w, chart_h = 48, 258, 536, 110
+    step = chart_w / len(MONTHLY)
     bars = []
     for i, m in enumerate(MONTHLY):
         bh = max(4, chart_h * m["total"] / maxv)
         is_best = m is best_month
-        x = chart_x + i * (chart_w / len(MONTHLY)) + 5
-        bw = chart_w / len(MONTHLY) - 10
-        bars.append(f'<rect class="g" style="animation-delay:{0.45 + i*0.06:.2f}s" x="{x:.1f}" y="{chart_y + chart_h - bh:.1f}" width="{bw:.1f}" height="{bh:.1f}" rx="4" fill="{INK if is_best else GREY_BAR}"><title>{m["month"]}: {m["total"]}</title></rect>')
+        x = chart_x + i * step + 6
+        bw = step - 12
+        bars.append(f'<rect class="g" style="animation-delay:{0.5 + i*0.06:.2f}s" x="{x:.1f}" y="{base_y - bh:.1f}" width="{bw:.1f}" height="{bh:.1f}" rx="5" fill="{BLUE if is_best else INK}"><title>{m["month"]}: {m["total"]}</title></rect>')
         label = datetime.date.fromisoformat(m["month"] + "-01").strftime("%b")
-        bars.append(f'<text class="f" style="animation-delay:{0.55 + i*0.06:.2f}s" x="{x + bw/2:.1f}" y="{chart_y + chart_h + 21}" text-anchor="middle" font-family="{MONO}" font-size="10.5" fill="{MUTED}">{label}</text>')
+        bars.append(f'<text class="f" style="animation-delay:{0.6 + i*0.06:.2f}s" x="{x + bw/2:.1f}" y="{base_y + 24}" text-anchor="middle" font-family="{SANS}" font-size="12" fill="{MUTED}">{label}</text>')
         if is_best:
-            bars.append(f'<text class="p" style="animation-delay:{0.45 + i*0.06 + 0.5:.2f}s" x="{x + bw/2:.1f}" y="{chart_y + chart_h - bh - 9:.1f}" text-anchor="middle" font-family="{SANS}" font-weight="bold" font-size="15" fill="{INK}">{m["total"]}</text>')
+            bars.append(f'<text class="p" style="animation-delay:{0.5 + i*0.06 + 0.5:.2f}s" x="{x + bw/2:.1f}" y="{base_y - bh - 10:.1f}" text-anchor="middle" font-family="{SANS}" font-size="13" font-weight="600" fill="{BLUE}">{m["total"]:,}</text>')
     stats = [
-        (f"{TOTAL:,}", "contributions · last year"),
         (f"{LONG_STREAK} days", "longest streak"),
-        (f"{ACTIVE} days", "active days"),
-        (f"{BEST['count']} · {datetime.date.fromisoformat(BEST['date']).strftime('%d %b')}", "busiest day"),
+        (f"{ACTIVE} / {total_days}", "days with a contribution"),
+        (f"{BEST['count']}", f"on the busiest day · {datetime.date.fromisoformat(BEST['date']).strftime('%d %b')}"),
     ]
-    stat_svg, sy = "", 76
+    stat_svg, sy = "", 108
     for i, (val, lab) in enumerate(stats):
-        stat_svg += (f'<g class="sl" style="animation-delay:{0.8 + i*0.13:.2f}s">'
-                     f'<rect x="616" y="{sy-21}" width="4" height="30" rx="2" fill="{INK}"/>'
-                     f'<text x="634" y="{sy}" font-family="{SERIF}" font-size="24" fill="{INK}">{val}</text>'
-                     f'<text x="634" y="{sy+18}" font-family="{MONO}" font-size="10" letter-spacing="1" fill="{MUTED}">{lab.upper()}</text></g>')
-        sy += 50
+        stat_svg += (f'<g class="sl" style="animation-delay:{0.85 + i*0.16:.2f}s">'
+                     f'<text x="640" y="{sy}" font-family="{SERIF}" font-size="38" fill="{INK}">{val}</text>'
+                     f'<text x="642" y="{sy+26}" font-family="{SANS}" font-size="13.5" fill="{SOFT}">{lab}</text></g>')
+        sy += 84
     body = f"""
 {frame(W, h)}
-<text class="f" {d(0.05)} x="48" y="36" font-family="{MONO}" font-size="12" letter-spacing="2" fill="{MUTED}">ACTIVITY · BY MONTH</text>
-<text class="f" {d(0.05)} x="832" y="36" text-anchor="end" font-family="{MONO}" font-size="12" fill="{MUTED}">CURRENT STREAK {CUR_STREAK} DAYS</text>
-<line x1="{chart_x}" y1="{chart_y+chart_h}" x2="{chart_x+chart_w}" y2="{chart_y+chart_h}" stroke="{RULE}"/>
+<text class="f" {d(0.05)} x="48" y="42" font-family="{MONO}" font-size="12" letter-spacing="2.5" fill="{MUTED}">THE LAST 12 MONTHS ON GITHUB</text>
+<g class="r" {d(0.2)}>
+  <text x="46" y="112" font-family="{SERIF}" font-size="58" fill="{INK}">{TOTAL:,}<tspan font-family="{SANS}" font-weight="300" font-size="38" fill="{SOFT}"> contributions</tspan></text>
+</g>
+<text class="f" {d(0.3)} x="640" y="52" font-family="{SANS}" font-size="13.5" fill="{SOFT}">current streak {CUR_STREAK} days</text>
 {''.join(bars)}
-<line x1="592" y1="56" x2="592" y2="{h-24}" stroke="{RULE}"/>
 {stat_svg}
 """
-    write("activity.svg", svg(W, h, body, f"Contributions by month. {TOTAL} in the last year, longest streak {LONG_STREAK} days, busiest day {BEST['count']}."))
+    write("activity.svg", svg(W, h, body, f"The last 12 months on GitHub: {TOTAL} contributions. Longest streak {LONG_STREAK} days, {ACTIVE} of {total_days} days with a contribution, busiest day {BEST['count']}."))
 
 # ---- 4 · world tiles: white / grey / black -----------------------------------------
 TILE_W = W / 3 - 8
