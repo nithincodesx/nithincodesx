@@ -1,72 +1,42 @@
+<!-- Every card is an animated SVG drawn by scripts/render_readme_cards.py from real
+     GitHub data (scripts/fetch_contributions.py) and refreshed daily by
+     .github/workflows/update-profile-art.yml. Design: "Agent Worlds" -- dark violet,
+     cyan and amber, matched to my tokyonight streak card. Spacing is baked into the
+     SVGs, so keep this block free of blank lines and keep the cards in a row on one
+     line with no spaces between them. -->
 <div align="center">
-
-<!-- Animated wave header (self-hosted, always loads) -->
-<img src="./assets/header.svg" width="100%" alt="header"/>
-
-<!-- Animated typing lines -->
-<a href="https://github.com/nithincodesx">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=7C3AED&center=true&vCenter=true&width=600&lines=Tech+Enthusiast+%26+Aspiring+AI+Engineer;Building+Voice+AI+%26+Autonomous+Agents;Computer+Science+Student+from+Kerala%2C+India;I+ship+agents+that+actually+do+things" alt="Typing SVG" />
-</a>
-
-<br/>
-
-<a href="https://github.com/nithincodesx?tab=followers"><img src="https://img.shields.io/github/followers/nithincodesx?label=Followers&style=flat&color=7c3aed" alt="followers" /></a>
-<a href="https://github.com/nithincodesx"><img src="https://img.shields.io/badge/Repositories-47%20public-7c3aed?style=flat" alt="repos" /></a>
-
+<a href="https://github.com/nithincodesx"><img src="./cards/hero.svg" width="100%" alt="Nithinkrishna T D. Building voice AI and autonomous agents. Computer Science student from Kerala, India." /></a><br>
+<img src="./cards/heatmap.svg" width="100%" alt="Contribution graph for the last 12 months, in violet, refreshed daily" /><br>
+<img src="./cards/activity.svg" width="100%" alt="Contributions by month, with total, longest streak, active days and busiest day" /><br>
+<a href="https://github.com/nithincodesx?tab=repositories"><img src="./cards/build.svg" width="33.333%" alt="BUILD: public repos shipped" /></a><a href="https://github.com/nithincodesx/Coraxis"><img src="./cards/agents.svg" width="33.333%" alt="AGENTS: 4 agents in Coraxis" /></a><a href="https://github.com/nithincodesx/ammacare"><img src="./cards/voice.svg" width="33.333%" alt="VOICE AI: Malayalam-first AmmaCare, 2 languages" /></a><br>
+<img src="./cards/title-building.svg" width="100%" alt="What I'm building" /><br>
+<a href="https://github.com/nithincodesx/Coraxis"><img src="./cards/repo-coraxis.svg" width="33.333%" alt="Coraxis" /></a><a href="https://github.com/nithincodesx/ammacare"><img src="./cards/repo-ammacare.svg" width="33.333%" alt="AmmaCare" /></a><a href="https://github.com/nithincodesx/Verified-Hybrid-Multi-Agent-RAG-System-v1"><img src="./cards/repo-rag.svg" width="33.333%" alt="Verified Hybrid Multi-Agent RAG System" /></a><br>
+<img src="./cards/tech.svg" width="100%" alt="Tech I build with: Python, TypeScript, React, Next.js, FastAPI, Node.js, Supabase, PostgreSQL, Firebase, Git" />
 </div>
 
----
+## About Me
 
-## 🚀 About Me
+- I build **autonomous AI agents** and **voice AI** — agents that research, reason and *act*, not just chat
+- Computer Science student from **Kerala, India**, shipping solo on an entirely free stack
+- Deep into multi-agent systems, RAG pipelines and agent verification right now
+- Motto: *ship it, then make it smarter*
 
-- 🤖 I build **autonomous AI agents** and **voice AI** systems — agents that research, reason and act, not just chat
-- 🎓 Computer Science student from **Kerala, India**
-- 🔬 Currently deep into multi-agent systems, RAG pipelines and agent verification
-- ⚡ Motto: *ship it, then make it smarter*
-- 📫 Reach me via [GitHub](https://github.com/nithincodesx)
-
----
-
-## 🌟 Featured Projects
+## More Projects
 
 | Project | What it does |
 |---|---|
-| [**Coraxis**](https://github.com/nithincodesx/Coraxis) | Watch four AI agents research a topic live: search, cross-check sources, reason through findings, and hand you back a cited report. Built solo on an entirely free stack — no paid keys required. |
-| [**Verified Hybrid Multi-Agent RAG**](https://github.com/nithincodesx/Verified-Hybrid-Multi-Agent-RAG-System-v1) | BM25 + vector search with an LLM and an independent verification agent that checks every claim against source documents to prevent hallucinations. |
-| [**Cozy Coffee**](https://github.com/nithincodesx/Cozy-Coffee-v1) | A full-stack community app for coffee enthusiasts — share brews, review cafés, join forum discussions, connect worldwide. |
-| [**CloudPulse AI**](https://github.com/nithincodesx/CloudPulse-AI) | SaaS-style dashboard tracking real-time server utilization, budget anomalies and idle infrastructure, with telemetry logged to Supabase. |
+| [**Cozy Coffee**](https://github.com/nithincodesx/Cozy-Coffee-v1) | Full-stack community app for coffee enthusiasts — share brews, review cafés, join forum discussions. |
+| [**CloudPulse AI**](https://github.com/nithincodesx/CloudPulse-AI) | SaaS-style dashboard tracking real-time server utilization, budget anomalies and idle infrastructure, with telemetry in Supabase. |
 | [**MediLink AI**](https://github.com/nithincodesx/MediLink-AI) | AI-powered healthcare linking, built with Python. |
 
----
-
-## 🛠️ Tech Stack
+## Contribution Snake
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,ts,js,react,nextjs,nodejs,fastapi,firebase,supabase,postgres,git,github,vscode,html,css&perline=8" alt="tech stack" />
+  <img src="https://github.com/nithincodesx/nithincodesx/blob/output/github-contribution-grid-snake.svg" alt="snake eating my contributions" />
 </div>
 
----
+<p align="center">
+<a href="https://github.com/nithincodesx?tab=followers">followers</a> &nbsp;/&nbsp; <a href="https://github.com/nithincodesx?tab=repositories">all repos</a> &nbsp;/&nbsp; <a href="https://github.com/nithincodesx/Coraxis">coraxis</a> &nbsp;/&nbsp; <a href="https://github.com/nithincodesx/ammacare">ammacare</a>
+</p>
 
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=nithincodesx&theme=tokyonight" alt="github streak" />
-</div>
-
----
-
-## 🐍 Contribution Snake
-
-<div align="center">
-  <img src="https://github.com/nithincodesx/nithincodesx/blob/output/github-contribution-grid-snake.svg" alt="snake eating contributions" />
-</div>
-
----
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%" alt="footer"/>
-
-**Thanks for stopping by — if an agent of mine sent you here, say hi. 🤖**
-
-</div>
+<p align="center"><sub>Cards redrawn daily by GitHub Actions from my real contribution data. Animated-SVG-card design inspired by <a href="https://www.avivashishta.com/blog/github-profile-readme-animated-svg-cards">Avi Vashishta's README guide</a>. Thanks for stopping by — if an agent of mine sent you here, say hi.</sub></p>

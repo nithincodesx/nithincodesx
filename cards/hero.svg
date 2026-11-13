@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880.000" height="482" viewBox="0 0 880.000 482" role="img" aria-label="Nithinkrishna T D. Building voice AI and autonomous agents. Computer Science student from Kerala, India."><title>Nithinkrishna T D. Building voice AI and autonomous agents. Computer Science student from Kerala, India.</title><style>
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes pop{0%{opacity:0;transform:scale(.3)}70%{opacity:1;transform:scale(1.15)}100%{opacity:1;transform:none}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}
+@keyframes nudge{0%,100%{transform:none}50%{transform:translate(3px,-3px)}}
+@keyframes tilein{0%{opacity:0;transform:translateY(70px) scale(.7) rotate(-7deg)}55%{opacity:1;transform:translateY(-8px) scale(1.04) rotate(1.6deg)}75%{transform:translateY(2px) scale(.99) rotate(-.6deg)}100%{opacity:1;transform:none}}
+@keyframes slidein{from{opacity:0;transform:translateX(-22px)}to{opacity:1;transform:none}}
+@keyframes sheen{0%{transform:translateX(-280px) skewX(-20deg)}22%,100%{transform:translateX(460px) skewX(-20deg)}}
+@keyframes ring{0%{opacity:.7;transform:scale(.2)}100%{opacity:0;transform:scale(2.4)}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+.r{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) both;transform-box:fill-box}
+.f{opacity:0;animation:fade .9s ease-out both}
+.g{transform-box:fill-box;transform-origin:bottom;transform:scaleY(0);animation:grow .8s cubic-bezier(.2,.7,.2,1) both}
+.p{opacity:0;transform-box:fill-box;transform-origin:center;animation:pop .35s ease-out both}
+.live{animation:pulse 1.6s ease-in-out infinite}
+.nu{transform-box:fill-box;animation:nudge 1.8s ease-in-out infinite}
+.ti{opacity:0;transform-box:fill-box;transform-origin:50% 60%;animation:tilein 1.1s cubic-bezier(.2,.8,.2,1) both}
+.sl{opacity:0;transform-box:fill-box;animation:slidein .6s cubic-bezier(.2,.7,.2,1) both}
+.sh{animation:sheen 5.5s ease-in-out infinite}
+.rg{opacity:0;transform-box:fill-box;transform-origin:center;animation:ring 1s ease-out both}
+.blink{animation:blink 1.1s step-end infinite}
+@media (prefers-reduced-motion: reduce){.r,.f,.g,.p,.ti,.sl{animation:none!important;opacity:1!important;transform:none!important}.sh,.rg{display:none}.live,.nu,.blink{animation:none!important}}
+</style>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#131a2e"/><stop offset=".55" stop-color="#0b0f1a"/><stop offset="1" stop-color="#1b1035"/>
+  </linearGradient>
+  <linearGradient id="shine" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="700" y2="0">
+    <stop offset="0" stop-color="#f1f5f9"/><stop offset=".42" stop-color="#f1f5f9"/>
+    <stop offset=".5" stop-color="#8b5cf6"/><stop offset=".58" stop-color="#f1f5f9"/>
+    <stop offset="1" stop-color="#f1f5f9"/>
+    <animateTransform attributeName="gradientTransform" type="translate" values="-700 0;700 0;700 0" keyTimes="0;.45;1" dur="7s" begin="1.8s" repeatCount="indefinite"/>
+  </linearGradient>
+</defs>
+<rect width="880" height="470" rx="14" fill="url(#bg)"/>
+<rect x="1" y="1" width="878" height="468" rx="13" fill="none" stroke="#26314d"/>
+<g class="f" style="animation-delay:0.00s">
+  <circle class="live" cx="52" cy="52" r="5" fill="#34d399"/>
+  <text x="68" y="57" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" letter-spacing="2" fill="#8b98b8">BUILDING VOICE AI &amp; AUTONOMOUS AGENTS</text>
+  <text x="832" y="57" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5" letter-spacing="2" fill="#8b98b8">KERALA, INDIA</text>
+</g>
+<text class="r" style="animation-delay:0.15s" x="46" y="168" font-family="Georgia, 'Times New Roman', serif" font-size="82" letter-spacing="-1" fill="url(#shine)">Nithinkrishna T D</text>
+<text class="r" style="animation-delay:0.35s" x="48" y="228" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="42" fill="#8b5cf6">agents that actually do things.</text>
+<g class="r" style="animation-delay:0.55s">
+  <text x="48" y="268" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="17.5" fill="#cbd5e1">Computer Science student building voice AI, multi-agent systems &amp; verified RAG --</text>
+  <text x="48" y="292" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="17.5" fill="#cbd5e1">solo, on an entirely free stack. Ship it, then make it smarter.</text>
+</g>
+
+<g class="f" style="animation-delay:0.90s">
+  <rect x="48" y="304" width="784" height="134" rx="10" fill="#070a12" stroke="#26314d"/>
+  <circle cx="66" cy="320" r="5" fill="#ef4444"/><circle cx="84" cy="320" r="5" fill="#fbbf24"/><circle cx="102" cy="320" r="5" fill="#34d399"/>
+  <text x="816" y="324" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#8b98b8">~/agents -- zsh</text>
+</g>
+<g class="f" style="animation-delay:1.00s"><text x="66" y="350" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#34d399">$ whoami</text><text x="330" y="350" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#8b98b8">&#8594; nithinkrishna · cs student · kerala, india</text></g><g class="f" style="animation-delay:1.45s"><text x="66" y="377" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#34d399">$ ./run coraxis --live</text><text x="330" y="377" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#22d3ee">&#8594; 4 agents research, cross-check &amp; cite</text></g><g class="f" style="animation-delay:1.90s"><text x="66" y="404" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#34d399">$ ./run ammacare</text><text x="330" y="404" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#fbbf24">&#8594; malayalam-first care agent for parents</text></g><text class="f" style="animation-delay:2.40s" x="66" y="431" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13.5" fill="#34d399">$ <tspan class="blink" fill="#f1f5f9">&#9612;</tspan></text>
+</svg>
