@@ -18,7 +18,7 @@
 <br>
 <div align="center">
 <a href="https://raw.githubusercontent.com/nithincodesx/nithincodesx/main/assets/CFS.mp3">
-<img src="./assets/retro-player.svg" width="420" alt="CFS - Retro player, click to play" />
+<img src="./assets/retro-player.svg" width="560" alt="CFS - Retro player, click to play" />
 </a>
 <br>
 <sub>▶ Click the retro player to play CFS • 0:30</sub>

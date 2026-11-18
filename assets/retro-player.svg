@@ -20,12 +20,9 @@
   <text x="420" y="72" font-family="monospace" font-size="17" letter-spacing="4" text-anchor="middle" fill="#111111">SIDE A</text>
   <circle cx="92" cy="105" r="9" fill="#f7f3ea"/>
   <circle cx="748" cy="105" r="9" fill="#f7f3ea"/>
-  <circle cx="420" cy="228" r="34" fill="#111111"/>
-  <path d="M408 208 L448 228 L408 248 Z" fill="#f7f3ea"/>
-  <text x="92" y="238" font-family="monospace" font-size="24" font-weight="bold" letter-spacing="2" fill="#111111">CFS</text>
-  <text x="748" y="230" font-family="monospace" font-size="19" letter-spacing="2" text-anchor="end" fill="#111111">CLICK TO PLAY</text>
-  <text x="748" y="256" font-family="monospace" font-size="13" letter-spacing="1" text-anchor="end" fill="#111111">RETRO PLAYER • 0:30</text>
-  <g fill="#111111">
-    <circle cx="540" cy="228" r="7"/><circle cx="572" cy="228" r="7"/><circle cx="604" cy="228" r="7"/>
-  </g>
+  <text x="56" y="232" font-family="monospace" font-size="26" font-weight="bold" letter-spacing="2" fill="#111111">CFS</text>
+  <text x="784" y="232" font-family="monospace" font-size="20" letter-spacing="2" text-anchor="end" fill="#111111">0:30</text>
+  <circle cx="420" cy="218" r="30" fill="#111111"/>
+  <path d="M409 200 L445 218 L409 236 Z" fill="#f7f3ea"/>
+  <text x="420" y="272" font-family="monospace" font-size="15" letter-spacing="3" text-anchor="middle" fill="#111111">CLICK TO PLAY</text>
 </svg>
