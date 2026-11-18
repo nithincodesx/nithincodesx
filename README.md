@@ -14,12 +14,3 @@
 <img src="./cards/skills.svg" width="100%" alt="Skills and stack: Languages, Frontend, Backend, Databases, Cloud and DevOps, Artificial Intelligence, Automation, Data and Search, Workflow" />
 </div>
 
-<!-- Retro player — added at the end, everything above unchanged -->
-<br>
-<div align="center">
-<a href="https://raw.githubusercontent.com/nithincodesx/nithincodesx/main/assets/CFS.mp3">
-<img src="./assets/retro-player.svg" width="560" alt="CFS - Retro player, click to play" />
-</a>
-<br>
-<sub>▶ Click the retro player to play CFS • 0:30</sub>
-</div>
